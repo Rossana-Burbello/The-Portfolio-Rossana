@@ -7,7 +7,47 @@
 
 
 .header{
-    background-color: beige;
+    background-color: rgb(31, 110, 104);
     padding:50px;
+    display: flex;
+    width:100%; 
+
+}
+
+.navbar{
+    margin: auto;
+    text-align: center;
+    width:1000px;
+    
+}
+
+a{
+    text-decoration: none;
+    padding-left: 100px;
+}
+
+a.Nome{
+    font-size:40px;
+    color:white;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: white;
+    justify-content: flex-end;
+}
+
+.container{
+    height:1000px;
+    display: flex;
+    margin:
+}
+
+.Bio{
+    background-color: rgb(182, 240, 240);
+}
+
+img{
+    width:60%;
     
 }
