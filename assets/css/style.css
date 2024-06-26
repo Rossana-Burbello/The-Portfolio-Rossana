@@ -37,17 +37,45 @@ a.Nome{
     justify-content: flex-end;
 }
 
-.container{
-    height:1000px;
+.container1{
+    height:800px;
     display: flex;
-    margin:
 }
 
-.Bio{
-    background-color: rgb(182, 240, 240);
+.Intro{
+    margin-top:200px;
+    width:60%;
 }
+
+
 
 img{
-    width:60%;
-    
+    width:40%;
+    border-radius:50%;
+    border: 2px;
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.Intro h1{
+    font-size:80px;
+}
+
+.Intro p{
+    width:80%;
+    font-size:20px;
+    margin-top:50px;
+    margin-right:50px;
+}
+
+.Intro button{
+    background-color:rgb(31, 110, 104);
+    color:white;
+    margin-top: 30px;
+    font-size:20px;
+    padding:20px;
+    border-radius:20px;
+    border:none;
+
 }
