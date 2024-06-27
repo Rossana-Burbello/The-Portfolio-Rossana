@@ -10,20 +10,22 @@
     background-color: rgb(31, 110, 104);
     padding:50px;
     display: flex;
-    width:100%; 
+    width:100%;
+    display:flex;
 
 }
 
 .navbar{
     margin: auto;
-    text-align: center;
     width:1000px;
+    display:flex;
+    justify-content: space-between;
     
 }
 
 a{
     text-decoration: none;
-    padding-left: 100px;
+
 }
 
 a.Nome{
@@ -34,19 +36,20 @@ a.Nome{
 .navbar a{
     font-size: 20px;
     color: white;
-    justify-content: flex-end;
+   
 }
 
+
 .container1{
-    height:800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
 }
 
-.Intro{
-    margin-top:200px;
+.intro{
+    padding-top:150px;
     width:60%;
 }
-
 
 
 img{
@@ -58,18 +61,18 @@ img{
     margin-top: 20px;
 }
 
-.Intro h1{
+.intro h1{
     font-size:80px;
 }
 
-.Intro p{
+.intro p{
     width:80%;
     font-size:20px;
     margin-top:50px;
     margin-right:50px;
 }
 
-.Intro button{
+.intro button{
     background-color:rgb(31, 110, 104);
     color:white;
     margin-top: 30px;
@@ -78,4 +81,25 @@ img{
     border-radius:20px;
     border:none;
 
+}
+
+.container2{
+    background-color: beige;
+    padding:50px;
+}
+
+.container2:after{
+    clear:both;
+    display:table;
+    content:"";
+}
+
+.project{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    float:left;
+    border:2px solid black;
+    margin:10px;
+    
 }
