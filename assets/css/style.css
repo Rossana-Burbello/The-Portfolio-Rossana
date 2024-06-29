@@ -6,6 +6,8 @@
 }
 
 
+
+/* HEADER*/
 .header{
     background-color: rgb(31, 110, 104);
     padding:50px;
@@ -37,66 +39,94 @@ a.Nome{
    
 }
 
+/* FINE HEADER*/
 
-.container1{
+
+/* MAIN*/
+.main{
+    padding-left:100px;
+    padding-right:100px;
+
+}
+
+.presentazione{
     margin-top: 50px;
     margin-bottom: 50px;
-    display: flex;
+    display:flex;
 }
 
-.intro{
-    padding-top:150px;
-    width:60%;
+.Photo{
+    width:40%;
 }
-
 
 .Photo img{
-    width:40%;
+    width:50%;
     border-radius:50%;
     border: 2px;
     display: block;
     margin:auto;
     margin-top: 20px;
+    margin-bottom: 20px;
+
+    
+}
+
+.intro{
+    width:60%;
 }
 
 .intro h1{
     font-size:80px;
+    margin-top:20px;
+    margin-bottom: 30px;
 }
 
 .intro p{
-    width:80%;
     font-size:20px;
-    margin-top:50px;
-    margin-right:50px;
+    margin-bottom: 30px;
 }
 
 .intro button{
     background-color:rgb(31, 110, 104);
     color:white;
-    margin-top: 30px;
     font-size:20px;
-    padding:20px;
+    padding:30px;
     border-radius:20px;
     border:none;
+}
+
+
+
+.progetti{
+    background-color: rgb(245, 211, 229);
+    border-radius: 30px;
+    padding: 80px;
+    margin-bottom:50px;
+    display:flex;
 
 }
 
-.container2{
-    background-color: beige;
-    padding:50px;
-}
-
-.container2:after{
+.progetti:after{
     clear:both;
     display:table;
     content:"";
 }
 
+
+
+.text-project {
+    width:40%;
+    margin-right:200px; 
+}
+
+.text-project h1{
+    margin-bottom:30px;
+}
+
+
 .project{
-    width: calc(100% / 3 - 40px);
-    height: 300 px;
-    float:left;
-    margin:20px;
+    width:60%;
+
 }
 
 .progetto-grafica img{
@@ -121,12 +151,12 @@ a.Nome{
 }
 
 
-.container3{
+.contatti{
     background-color: grey;
     padding: 50px;
 }
 
-.container3:after{
+.contatti:after{
     clear:both;
     display:table;
     content:"";
@@ -141,11 +171,13 @@ form{
 
 input{
     padding: 20px;
+    border-radius: 20px;
     
 }
 
 textarea{
     padding: 20px;
+    border-radius: 20px;
 
 }
 
@@ -184,3 +216,130 @@ textarea{
     float:left;
     margin-top:20px;
 }
+
+/* FINE MAIN*/
+
+
+/* MEDIA QUERY MOBILE*/
+
+@media (max-width: 640px) {
+
+    .main{
+        padding-left:10px;
+        padding-right:10px;
+    
+    }
+
+    .presentazione{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display:inline-block
+    }
+    
+
+
+    .Photo{
+         width:50%;
+         margin:auto;
+         
+     }
+     
+     .Photo img{
+         width:100%;
+         border-radius:50%;
+         border: 2px;
+         margin-top: 20px;
+         margin-bottom: 20px;
+     
+         
+     }
+     
+     .intro{
+        /* background-color: beige;*/
+         width:80%;
+         margin:auto;
+         text-align: center;
+         
+     }
+     
+     .intro h1{
+         font-size:50px;
+         margin-top:20px;
+         margin-bottom: 30px;
+         text-align: center;
+     }
+     
+     .intro p{
+         font-size:20px;
+         margin-bottom: 30px;
+         text-align: justify;
+        
+
+     }
+     
+     .intro button{
+         background-color:rgb(31, 110, 104);
+         color:white;
+         font-size:20px;
+         padding:20px;
+         border-radius:20px;
+         border:none; 
+    
+     }
+
+
+
+     .progetti{
+        background-color: beige;
+        padding: 80px;
+        display:flex;
+    
+    }
+    
+    .progetti:after{
+        clear:both;
+        display:table;
+        content:"";
+    }
+    
+    
+    
+    .text-project {
+        margin-right:200px; 
+    }
+    
+    
+    .project{
+        width: calc(100% / 3 - 40px);
+        height: 300 px;
+        float:left;
+        margin:20px;
+    }
+    
+    .progetto-grafica img{
+        width: 100%;
+    }
+    
+    .project-title{
+        font-size: 30px;
+        margin-top:20px;
+        font-weight: bold;
+    }
+    
+    
+    .CTA button{
+        margin-top:20px;
+        padding:20px;
+        font-size: 20px;
+        background-color:rgb(31, 110, 104);
+        border: none;
+        border-radius: 10px;
+        color: white;
+    }
+}
+
+
+@media (min-width: 640px) (max-width:1024px){
+    
+}
+
