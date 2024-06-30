@@ -115,14 +115,27 @@ a.Nome{
 
 
 .text-project {
-    width:40%;
-    margin-right:200px; 
+    width:100%;
+    margin:auto;
+    margin-bottom: 50px;
+    background-color: beige; 
+    border-radius: 30px;
+    padding: 80px;
+}
+
+.text-project p {
+    font-size: 20px;
+    margin:10px;
 }
 
 .text-project h1{
     margin-bottom:30px;
+    font-size: 40px;
 }
 
+li{
+    margin:20px;
+}
 
 .project{
     width:60%;
