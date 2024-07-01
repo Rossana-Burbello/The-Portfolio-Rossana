@@ -13,24 +13,28 @@
     padding:50px;
     display: flex;
     width:100%;
+    
 }
 
 .navbar{
     margin: auto;
     width:1000px;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 
+
 a{
     text-decoration: none;
+    
 
 }
 
 a.Nome{
     font-size:40px;
     color:white;
+    margin-left:200px;
 }
 
 .navbar a{
@@ -44,8 +48,8 @@ a.Nome{
 
 /* MAIN*/
 .main{
-    padding-left:100px;
-    padding-right:100px;
+    padding-left:200px;
+    padding-right:200px;
 
 }
 
@@ -84,6 +88,7 @@ a.Nome{
 .intro p{
     font-size:20px;
     margin-bottom: 30px;
+    margin-right:50px;
 }
 
 .intro button{
@@ -96,6 +101,36 @@ a.Nome{
 }
 
 
+
+.training{
+    background-color: beige; 
+    border-radius: 30px;
+    display:flex;
+    justify-content:space-between;
+    padding: 80px;
+    margin-bottom: 50px;
+
+}
+
+.text-project p {
+    font-size: 20px;
+    margin:10px;
+}
+
+li{
+    margin:20px;
+}
+
+
+.skills .img-programm{
+    width:100px;
+}
+
+.title-section{
+    margin-bottom:30px;
+    font-size: 40px;
+
+}
 
 .progetti{
     background-color: rgb(245, 211, 229);
@@ -112,30 +147,6 @@ a.Nome{
     content:"";
 }
 
-
-
-.text-project {
-    width:100%;
-    margin:auto;
-    margin-bottom: 50px;
-    background-color: beige; 
-    border-radius: 30px;
-    padding: 80px;
-}
-
-.text-project p {
-    font-size: 20px;
-    margin:10px;
-}
-
-.text-project h1{
-    margin-bottom:30px;
-    font-size: 40px;
-}
-
-li{
-    margin:20px;
-}
 
 .project{
     width:60%;
@@ -240,6 +251,39 @@ input,textarea{
 
 @media (max-width: 640px) {
 
+
+    .container-bars{
+        display: inline-block;
+        margin:auto;
+        cursor: pointer;
+    }
+    
+    .bar1, .bar2, .bar3{
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin:6px 0;
+        border-radius: 5px;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+
+    a.Nome{
+        font-size:40px;
+        color:white;
+        margin-left:10px;
+    }
+    
+
+    .list-items{
+        background-color: aquamarine;
+        display: block;
+        
+    }
+
     .main{
         padding-left:10px;
         padding-right:10px;
@@ -300,6 +344,16 @@ input,textarea{
     
      }
 
+
+     .training{
+        background-color: beige; 
+        border-radius: 30px;
+        display: block;
+        padding: 80px;
+        margin-bottom: 50px;
+    
+    }
+
      .progetti{
         background-color: rgb(245, 211, 229);
         border-radius: 30px;
@@ -315,9 +369,10 @@ input,textarea{
     
     .text-project {
         width:100%;
-        margin-bottom:30px;
+        margin-bottom:50px;
     }
     
+
     .text-project h1{
         margin-bottom:30px;
     }
@@ -363,6 +418,27 @@ input,textarea{
 
 
 @media (min-width: 640px) (max-width:1024px){
+    
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+    .list-items{
+        display:flex;
+        flex-direction: column;
+        top:80px;
+    }
+
+    .list-items a{
+        display: none;
+    
+    }
+    .list-items li{
+        list-style-type: none;
+    }
     
 }
 
