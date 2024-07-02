@@ -210,6 +210,10 @@ a{
     width:100%;
 }
 
+.title-section{
+    margin-bottom: 50px;
+}
+
 .skills .img-programm{
     width:100px;
 }
@@ -322,9 +326,165 @@ input,textarea{
 
 
 
+@media (min-width:640px) and (max-width:1024px){
+
+    .header li {
+        float:left;
+    }
+
+    .header li a{
+        padding:20px 30px;
+    }
+    
+    .header .menu{
+        clear:none;
+        float:right;
+        max-height: none;
+        padding:20px 80px 20px 0;
+    }
+
+    .header .menu-icon{
+        display: none;
+    }
+
+    .header .Nome{
+        padding:20px 0 20px 80px;
+    }
+
+    .main{
+        padding-left:100px;
+        padding-right:100px;
+    
+    }
+    
+    .presentazione{
+        padding: 200px 0 50px 0;
+       
+    }
+    
+    .Photo{
+        width:60%;
+    }
+    
+    .Photo img{
+        width:50%;
+        border-radius:50%;
+        border: 2px;
+        display: block;
+        margin:auto;
+        margin-top: 20px;
+        margin-bottom: 20px;    
+    }
+    
+    .intro{
+        width:100%;
+        margin:0 20px 0 20px;
+    }
+    
+    .intro h1{
+        font-size:50px;
+        margin-top:20px;
+        margin-bottom: 30px;
+    }
+    
+    .intro p{
+        font-size:20px;
+        margin-bottom: 30px;
+        margin-right:50px;
+    }
+    
+    .intro button{
+        background-color:rgb(31, 110, 104);
+        color:white;
+        font-size:20px;
+        padding:30px;
+        border-radius:20px;
+        border:none;
+    }
 
 
-@media(min-width:640px){
+
+
+
+    .training{
+        background-color: beige; 
+        border-radius: 30px;
+        justify-content:space-between;
+        padding: 80px;
+        margin-bottom: 50px;
+    
+    }
+    
+    .text-project p {
+        font-size: 20px;
+        margin:10px;
+    }
+    
+    
+    .skills .img-programm{
+        width:100px;
+    }
+    
+    .title-section{
+        margin-bottom:30px;
+        font-size: 40px;
+    
+    }
+    
+    .progetti{
+        background-color: rgb(245, 211, 229);
+        border-radius: 30px;
+        padding: 80px;
+        margin-bottom:50px;
+    }
+    
+    .progetti:after{
+        clear:both;
+        display:table;
+        content:"";
+    }
+    
+    
+    .project{
+        width:60%;
+    
+    }
+    
+    .progetto-grafica img{
+        width: 100%;
+    }
+    
+    .project-title{
+        font-size: 30px;
+        margin-top:20px;
+        font-weight: bold;
+    }
+    
+    
+    .CTA button{
+        margin-top:20px;
+        padding:20px;
+        font-size: 20px;
+        background-color:rgb(31, 110, 104);
+        border: none;
+        border-radius: 10px;
+        color: white;
+    }
+
+
+
+    form{
+        padding-top:50px;
+        padding-bottom: 50px;
+        margin:auto; 
+        width:100%;
+        
+        
+    }
+}
+
+
+@media(min-width:1024px){
 
     .header li {
         float:left;
@@ -477,9 +637,7 @@ input,textarea{
         padding-top:50px;
         padding-bottom: 50px;
         margin:auto; 
-        width:1000px;
-        
-        
+        width:100%;
     }
     
     

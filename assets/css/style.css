@@ -456,7 +456,7 @@ input,textarea{
 }
 
 
-@media (min-width: 640px) (max-width:1024px){
+@media (min-width: 640px) and (max-width:1024px){
 
     
     
