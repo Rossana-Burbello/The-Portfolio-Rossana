@@ -7,45 +7,6 @@
 
 
 
-/* HEADER*/
-.header{
-    background-color: rgb(31, 110, 104);
-    padding:50px;
-    display: flex;
-    width:100%;
-    
-}
-
-.navbar{
-    margin: auto;
-    width:1000px;
-    display:flex;
-    justify-content: space-around;
-    
-}
-
-
-a{
-    text-decoration: none;
-    
-
-}
-
-a.Nome{
-    font-size:40px;
-    color:white;
-    margin-left:200px;
-}
-
-.navbar a{
-    font-size: 20px;
-    color: white;
-   
-}
-
-/* FINE HEADER*/
-
-
 /* MAIN*/
 .main{
     padding-left:200px;
@@ -115,10 +76,6 @@ a.Nome{
 .text-project p {
     font-size: 20px;
     margin:10px;
-}
-
-li{
-    margin:20px;
 }
 
 
@@ -251,37 +208,119 @@ input,textarea{
 
 @media (max-width: 640px) {
 
-
-    .container-bars{
-        display: inline-block;
-        margin:auto;
-        cursor: pointer;
+    a{
+        color:white;
     }
-    
-    .bar1, .bar2, .bar3{
-        width: 35px;
-        height: 5px;
+
+
+    .header{
+        background-color: rgb(31, 110, 104);
+        box-shadow: 1px 1px 4px 0 rgba(31, 110, 104, .1);
+        position:fixed;
+        width:100%;
+        z-index:1 ;
+    }
+
+
+    .header ul{
+        padding:0;
+        margin:0;
+        list-style: none;
+        overflow: hidden;
+        background-color: rgb(31, 110, 104);
+    }
+
+    .header ul a{
+        display: block;
+        border-right:1px solid red;
+        padding: 20px;
+        text-decoration: none;
+
+    }
+
+    .header ul a:hover{
+        background-color: rgb(79, 148, 142);
+
+    }
+
+    .header .Nome{
+        float: left;
+        font-size:40px;
+        color:white;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+
+    .header .menu{
+        clear:both;
+        max-height: 0;
+        transition: max-heigth .2s ease-out;
+    }
+
+
+    .header .menu-icon{
+        border: 1px solid red;
+        padding:28px 20px;
+        position:relative;
+        float:right;
+        cursor:pointer;
+    }
+
+
+    .header .menu-icon .nav-icon{
         background-color: white;
-        margin:6px 0;
+        display: block;
+        width:18px;
+        height: 2px;
+        position:relative;
+        transition: background-color .2s ease-out;
         border-radius: 5px;
     }
 
-    .navbar{
-        display:none;
-    }
-
-
-    a.Nome{
-        font-size:40px;
-        color:white;
-        margin-left:10px;
-    }
-    
-
-    .list-items{
-        background-color: aquamarine;
+    .header .menu-icon .nav-icon::before,
+    .header .menu-icon .nav-icon::after{
+        background-color: white;
+        content: "";
         display: block;
-        
+        height: 100%;
+        width:100%;
+        transition:all .2s ease-out;
+        position: absolute;
+       
+    }
+
+    .header .menu-icon .nav-icon::after{
+        top:-5px;
+
+    }
+
+
+    .header .menu-icon .nav-icon::before{
+        top:5px;
+
+    }
+
+
+    .header .menu-btn{
+        display: none;
+    }
+
+
+    .header .menu-btn:checked ~ .menu{
+        max-height:240px;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .nav-icon{
+        background-color: transparent;
+    }
+    .header .menu-btn:checked ~ .menu-icon .nav-icon::before{
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .header .menu-btn:checked ~ .menu-icon .nav-icon::after{
+        transform: rotate(45deg);
+        top:0;
+       
     }
 
     .main{
@@ -418,27 +457,61 @@ input,textarea{
 
 
 @media (min-width: 640px) (max-width:1024px){
+
+    
     
 }
 
 
 
 
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
 
-    .list-items{
-        display:flex;
-        flex-direction: column;
-        top:80px;
+    .header{
+        background-color: rgb(31, 110, 104);
+        padding:50px;
+        display: flex;
+        width:100%;
     }
 
-    .list-items a{
+
+    .header .Nome {
+        font-size:40px;
+        color:white;
+        margin-left:10px;
+        text-decoration: none;
+    } 
+
+    .header .menu-btn{
         display: none;
-    
     }
-    .list-items li{
-        list-style-type: none;
+
+
+
+    .header li {
+        float:left;
     }
+
+    .header li a{
+        padding:20px 30px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .header .menu{
+        list-style: none;
+        margin: auto;
+        width:1000px;
+        display:flex;
+        justify-content: space-around;
+        }
+
+    .header .menu-icon {
+        display: none;
+    }
+   
+
     
 }
 

@@ -1,0 +1,486 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Comfortaa", sans-serif;
+}
+
+
+a{
+    color:white;
+}
+
+
+.header{
+    background-color: rgb(31, 110, 104);
+    box-shadow: 1px 1px 4px 0 rgba(31, 110, 104, .1);
+    position:fixed;
+    width:100%;
+    z-index:1 ;
+}
+
+
+.header ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(31, 110, 104);
+}
+
+.header ul a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+.header ul a:hover{
+    background-color: rgb(79, 148, 142);
+
+}
+
+.header .Nome{
+    float: left;
+    font-size:40px;
+    color:white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.header .menu{
+    clear:both;
+    max-height: 0;
+    transition: max-heigth .2s ease-out;
+}
+
+
+.header .menu-icon{
+    padding:28px 20px;
+    position:relative;
+    float:right;
+    cursor:pointer;
+}
+
+
+.header .menu-icon .nav-icon{
+    background-color: white;
+    display: block;
+    width:18px;
+    height: 2px;
+    position:relative;
+    transition: background-color .2s ease-out;
+    border-radius: 5px;
+}
+
+.header .menu-icon .nav-icon::before,
+.header .menu-icon .nav-icon::after{
+    background-color: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width:100%;
+    transition:all .2s ease-out;
+    position: absolute;
+   
+}
+
+.header .menu-icon .nav-icon::after{
+    top:-5px;
+
+}
+
+
+.header .menu-icon .nav-icon::before{
+    top:5px;
+
+}
+
+
+.header .menu-btn{
+    display: none;
+}
+
+
+.header .menu-btn:checked ~ .menu{
+    max-height:240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background-color: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+    top:0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+    top:0;
+   
+}
+
+
+
+
+
+.main{
+    
+    padding-left:10px;
+    padding-right:10px;
+
+}
+
+.presentazione{
+    display:inline-block;
+    padding:50px 0 50px 0;
+    
+}
+
+
+.Photo{
+     width:50%;
+     margin:auto;
+     
+ }
+ 
+ .Photo img{
+     width:100%;
+     border-radius:50%;
+     border: 2px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ 
+     
+ }
+ 
+ .intro{
+     width:80%;
+     margin:auto;
+     text-align: center;
+     
+ }
+ 
+ .intro h1{
+     font-size:50px;
+     margin-top:20px;
+     margin-bottom: 30px;
+     text-align: center;
+ }
+ 
+ .intro p{
+     font-size:20px;
+     margin-bottom: 30px;
+     text-align: justify;
+    
+
+ }
+ 
+ .intro button{
+     background-color:rgb(31, 110, 104);
+     color:white;
+     font-size:20px;
+     padding:20px;
+     border-radius:20px;
+     border:none; 
+
+ }
+
+
+
+ .training{
+    background-color: beige; 
+    border-radius: 30px;
+    display: block;
+    padding: 80px;
+    margin-bottom: 50px;
+
+}
+
+ .progetti{
+    background-color: rgb(245, 211, 229);
+    border-radius: 30px;
+    padding: 80px;
+    margin-bottom:50px;
+    display: block;    
+} 
+
+.project{
+    margin:auto;
+    width:100%;
+}
+
+.skills .img-programm{
+    width:100px;
+}
+
+.text-project {
+    width:100%;
+    margin-bottom:50px;
+}
+
+
+.text-project h1{
+    margin-bottom:30px;
+}
+
+.text-project p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.progetto-grafica img{
+    width: 100%;
+}
+
+.project-title{
+    font-size: 30px;
+    margin-top:20px;
+    font-weight: bold;
+}
+
+
+.CTA button{
+    margin-top:20px;
+    padding:20px;
+    font-size: 20px;
+    background-color:rgb(31, 110, 104);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width:100%;
+}
+
+
+
+form{
+    padding: 80px;
+    margin:auto; 
+    width:500px;
+    
+}
+
+.contatti:after{
+    clear:both;
+    display:table;
+    content:"";
+}
+
+.contatti{
+    background-color: rgb(167, 211, 211);
+    margin-bottom:20px;
+    border-radius: 30px;
+}
+
+.message{
+    width:100%;
+}
+
+.input-title{
+    margin-bottom: 10px;
+}
+
+
+input,textarea{
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+
+.info input[type=text], .info input[type=email]{
+    width:100%;
+    font-size: 100%;
+    margin-bottom: 30px;
+    border:none;
+    
+}
+
+.message textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 100%;
+    margin-bottom: 30px;
+    border:none;
+
+
+}
+
+.check{
+    float:left;
+}
+
+
+.submit input[type=Submit]{
+    width:100%;
+    font-size: 100%;
+    margin-top:20px;
+    margin-bottom: 50px;
+    border:none;
+
+}
+
+
+
+
+
+
+@media(min-width:640px){
+
+    .header li {
+        float:left;
+    }
+
+    .header li a{
+        padding:20px 30px;
+    }
+    
+    .header .menu{
+        clear:none;
+        float:right;
+        max-height: none;
+        padding:20px 200px 20px 0;
+    }
+
+    .header .menu-icon{
+        display: none;
+    }
+
+    .header .Nome{
+        padding:20px 0 20px 200px;
+    }
+
+    .main{
+        padding-left:200px;
+        padding-right:200px;
+    
+    }
+    
+    .presentazione{
+        padding: 150px 0 50px 0;
+        display:flex;
+    }
+    
+    .Photo{
+        width:40%;
+    }
+    
+    .Photo img{
+        width:50%;
+        border-radius:50%;
+        border: 2px;
+        display: block;
+        margin:auto;
+        margin-top: 20px;
+        margin-bottom: 20px;    
+    }
+    
+    .intro{
+        width:60%;
+    }
+    
+    .intro h1{
+        font-size:80px;
+        margin-top:20px;
+        margin-bottom: 30px;
+    }
+    
+    .intro p{
+        font-size:20px;
+        margin-bottom: 30px;
+        margin-right:50px;
+    }
+    
+    .intro button{
+        background-color:rgb(31, 110, 104);
+        color:white;
+        font-size:20px;
+        padding:30px;
+        border-radius:20px;
+        border:none;
+    }
+
+
+
+
+
+    .training{
+        background-color: beige; 
+        border-radius: 30px;
+        display:flex;
+        justify-content:space-between;
+        padding: 80px;
+        margin-bottom: 50px;
+    
+    }
+    
+    .text-project p {
+        font-size: 20px;
+        margin:10px;
+    }
+    
+    
+    .skills .img-programm{
+        width:100px;
+    }
+    
+    .title-section{
+        margin-bottom:30px;
+        font-size: 40px;
+    
+    }
+    
+    .progetti{
+        background-color: rgb(245, 211, 229);
+        border-radius: 30px;
+        padding: 80px;
+        margin-bottom:50px;
+        display:flex;
+    
+    }
+    
+    .progetti:after{
+        clear:both;
+        display:table;
+        content:"";
+    }
+    
+    
+    .project{
+        width:60%;
+    
+    }
+    
+    .progetto-grafica img{
+        width: 100%;
+    }
+    
+    .project-title{
+        font-size: 30px;
+        margin-top:20px;
+        font-weight: bold;
+    }
+    
+    
+    .CTA button{
+        margin-top:20px;
+        padding:20px;
+        font-size: 20px;
+        background-color:rgb(31, 110, 104);
+        border: none;
+        border-radius: 10px;
+        color: white;
+    }
+
+
+
+    form{
+        padding-top:50px;
+        padding-bottom: 50px;
+        margin:auto; 
+        width:1000px;
+        
+        
+    }
+    
+    
+}
