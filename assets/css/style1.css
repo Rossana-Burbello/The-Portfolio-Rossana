@@ -122,12 +122,10 @@ a{
 
 
 
-
-
 .main{
     
-    padding-left:10px;
-    padding-right:10px;
+    padding-left:20px;
+    padding-right:20px;
 
 }
 
@@ -142,9 +140,9 @@ a{
      width:50%;
      margin:auto;
      
- }
+}
  
- .Photo img{
+.Photo img{
      width:100%;
      border-radius:50%;
      border: 2px;
@@ -152,31 +150,31 @@ a{
      margin-bottom: 20px;
  
      
- }
+}
  
- .intro{
+.intro{
      width:80%;
      margin:auto;
      text-align: center;
      
- }
+}
  
- .intro h1{
+.intro h1{
      font-size:50px;
      margin-top:20px;
      margin-bottom: 30px;
      text-align: center;
- }
+}
  
- .intro p{
+.intro p{
      font-size:20px;
      margin-bottom: 30px;
      text-align: justify;
     
 
- }
+}
  
- .intro button{
+.intro button{
      background-color:rgb(31, 110, 104);
      color:white;
      font-size:20px;
@@ -184,12 +182,12 @@ a{
      border-radius:20px;
      border:none; 
 
- }
+}
 
 
 
- .training{
-    background-color: rgb(213, 226, 224); 
+.training{
+    /*background-color: #D8E9E3;*/
     border-radius: 30px;
     display: block;
     padding: 80px;
@@ -227,52 +225,47 @@ a{
 }
 
 
-.progetti{
+
+.project-container{
     background-color: rgb(245, 211, 229);
     border-radius: 30px;
     padding: 80px;
     margin-bottom:50px;
-  
-} 
-
-.progetti h1{
-    display: block;
 }
 
+.project-container .title-section{
+    font-size: 30px;
+}
 
+.albums{
+    background-color: rgb(231, 231, 245);
+    height:calc(100% / 5 - 20px);
+}
 
-.project-title{
-    font-size: 15px;
-    padding:8px 12px;
-    bottom:8px;
-    width: 100%;
-    text-align: center;
+.album{
+    margin: 10px;
     
 }
 
-
-.CTA button{
-    margin-top:20px;
-    padding:20px;
-    font-size: 20px;
-    background-color:rgb(31, 110, 104);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    width:100%;
-}
-
-
-.project{
-    margin:auto;
-    width:100%;
-} 
-
-.progetto-grafica img{
+.album-image img{
     width: 100%;
 }
 
+.album-title{
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
 
+.button-project{
+    background-color: rgb(31, 110, 104);
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+
+
+}
 
 
 
@@ -346,6 +339,22 @@ input,textarea{
     margin-bottom: 50px;
     border:none;
 
+}
+
+
+footer{
+    background-color: rgb(31, 110, 104);
+    display: flex;
+}
+
+footer h1{
+    margin: 20px;
+}
+
+
+.img-footer img{
+    width:30px;
+    margin:20px;
 }
 
 
@@ -455,45 +464,51 @@ input,textarea{
     
     }
     
-    .progetti{
+    
+    .project-container{
+        background-color: rgb(245, 211, 229);
         border-radius: 30px;
         padding: 80px;
         margin-bottom:50px;
     }
     
-    .progetti:after{
-        clear:both;
-        display:table;
-        content:"";
+    .project-container .title-section{
+        font-size: 30px;
     }
     
-    
-    .project{
-        width:60%;
-    
+    .albums{
+        background-color: rgb(231, 231, 245);
+        height:500px;
     }
     
-    .progetto-grafica img{
+    .album{
+        width: calc(100% / 3 - 20px);
+        margin: 10px;
+        float: left;
+    }
+    
+    .album-image img{
         width: 100%;
     }
     
-    .project-title{
-        font-size: 30px;
-        margin-top:20px;
-        font-weight: bold;
-    }
-    
-    
-    .CTA button{
-        margin-top:20px;
-        padding:20px;
+    .album-title{
         font-size: 20px;
-        background-color:rgb(31, 110, 104);
-        border: none;
-        border-radius: 10px;
-        color: white;
+        margin: 10px 0 10px 0;
     }
-
+    
+    .button-project{
+        background-color: rgb(31, 110, 104);
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    
+    
+    }
+    
+    
+    
 
 
     form{
@@ -600,7 +615,7 @@ input,textarea{
 
     
     
-    .ttext-training p {
+    .text-training p {
         font-size: 20px;
         margin:10px;
     }
@@ -616,48 +631,52 @@ input,textarea{
     
     }
     
-    .progetti{
+    
+    
+
+    .project-container{
+        background-color: rgb(245, 211, 229);
         border-radius: 30px;
         padding: 80px;
         margin-bottom:50px;
-        
-    
     }
     
-    .progetti:after{
-        clear:both;
-        display:table;
-        content:"";
+    .project-container .title-section{
+        font-size: 30px;
     }
     
-    
-    .project{
-        width:100%;
-        
-    
+    .albums{
+        background-color: rgb(231, 231, 245);
+        height:300px;
     }
     
-    .progetto-grafica img{
+    .album{
+        width: calc(100% / 5 - 20px);
+        margin: 10px;
+        float: left;
+    }
+    
+    .album-image img{
         width: 100%;
     }
     
-    .project-title{
+    .album-title{
         font-size: 20px;
-        margin-top:20px;
-        font-weight: bold;
+        margin: 10px 0 10px 0;
     }
     
-    
-    .CTA button{
-        margin-top:20px;
-        padding:20px;
-        font-size: 10px;
-        background-color:rgb(31, 110, 104);
-        border: none;
-        border-radius: 10px;
+    .button-project{
+        background-color: rgb(31, 110, 104);
         color: white;
+        font-size: 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    
+    
     }
-
+    
+    
 
 
     form{
