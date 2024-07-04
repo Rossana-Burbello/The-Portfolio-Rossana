@@ -198,21 +198,6 @@ a{
 }
 
 
-
- .progetti{
-    background-color: rgb(245, 211, 229);
-    border-radius: 30px;
-    padding: 80px;
-    margin-bottom:50px;
-    display: block;    
-} 
-
-.project{
-    margin:auto;
-    width:100%;
-}
-
-
 .text-training  ul li{
     padding-bottom: 50px;
 }
@@ -241,14 +226,28 @@ a{
     text-align: justify;
 }
 
-.progetto-grafica img{
-    width: 100%;
+
+.progetti{
+    background-color: rgb(245, 211, 229);
+    border-radius: 30px;
+    padding: 80px;
+    margin-bottom:50px;
+  
+} 
+
+.progetti h1{
+    display: block;
 }
 
+
+
 .project-title{
-    font-size: 30px;
-    margin-top:20px;
-    font-weight: bold;
+    font-size: 15px;
+    padding:8px 12px;
+    bottom:8px;
+    width: 100%;
+    text-align: center;
+    
 }
 
 
@@ -262,6 +261,22 @@ a{
     color: white;
     width:100%;
 }
+
+
+.project{
+    margin:auto;
+    width:100%;
+} 
+
+.progetto-grafica img{
+    width: 100%;
+}
+
+
+
+
+
+
 
 
 
@@ -617,7 +632,8 @@ input,textarea{
     
     
     .project{
-        width:60%;
+        width:100%;
+        
     
     }
     
@@ -626,7 +642,7 @@ input,textarea{
     }
     
     .project-title{
-        font-size: 30px;
+        font-size: 20px;
         margin-top:20px;
         font-weight: bold;
     }
@@ -635,7 +651,7 @@ input,textarea{
     .CTA button{
         margin-top:20px;
         padding:20px;
-        font-size: 20px;
+        font-size: 10px;
         background-color:rgb(31, 110, 104);
         border: none;
         border-radius: 10px;
