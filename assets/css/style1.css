@@ -7,6 +7,8 @@
 }
 
 
+
+/*INIZIO MENU*/
 a{
     color:white;
 }
@@ -120,7 +122,9 @@ a{
    
 }
 
+/*FINE MENU*/
 
+/*INIZIO MAIN*/
 
 .main{
     
@@ -129,10 +133,11 @@ a{
 
 }
 
+/*INIZIO PRESENTAZIONE*/
+
 .presentazione{
     display:inline-block;
     padding:50px 0 50px 0;
-    
 }
 
 
@@ -144,12 +149,11 @@ a{
  
 .Photo img{
      width:100%;
-     border-radius:50%;
+     /*border-radius:50%;*/
      border: 2px;
      margin-top: 40px;
      margin-bottom: 40px;
  
-     
 }
  
 .intro{
@@ -161,6 +165,7 @@ a{
  
 .intro h1{
      font-size:40px;
+     font-weight: 500;
      margin-top:20px;
      margin-bottom: 20px;
      text-align:left;
@@ -170,8 +175,6 @@ a{
      font-size:20px;
      margin-bottom: 20px;
      text-align: left;
-    
-
 }
  
 .intro button{
@@ -187,32 +190,40 @@ a{
 
 }
 
+/*FINE PRESENTAZIONE*/
 
+
+/*INIZIO PROGETTI*/
 
 .project-container{
-    background-color: rgb(245, 211, 229);
+    background-color: #F2E6DF;
     border-radius: 30px;
-    padding: 80px;
+    padding: 60px;
     margin-bottom:50px;
 }
 
+
 .project-container .title-section{
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 500;
 }
 
-.title-section{
+
+.project-container a{
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    
 }
 
 .albums{
-    
     height:calc(100% / 5 - 20px);
+    margin-top: 20px;
 }
 
 .album{
-    margin: 10px;
-    
+    margin: 20px 0 40px 0;
 }
 
 .album-image img{
@@ -224,65 +235,95 @@ a{
     margin: 10px 0 10px 0;
 }
 
+.album-subtitle{
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+}
+
+
+.album-description{
+    margin: 10px 0 10px 0;
+
+}
+
 .button-project{
     background-color: rgb(31, 110, 104);
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px;
     border: none;
-    border-radius: 5px;
-
-
+    border-radius: 10px;
+    margin:10px 0 0 0;
 }
 
+/*FINE PROGETTI*/
 
+
+/*INIZIO FORMAZIONE*/
 
 .training{
-    /*background-color: #D8E9E3;*/
     border-radius: 30px;
     display: block;
-    padding: 80px;
-    margin-bottom: 50px;
-
+    padding: 60px;
 }
 
+.text-training .title-section{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
 
 .text-training  ul li{
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+    color:rgb(31, 110, 104);
+    list-style-type:circle;
+    font-size: 30px;
+    
+}
+
+.text-training  ul li span{
+    padding-bottom: 40px;
+    color:black
+}
+
+.text-training ul li h1{
+    font-size: 25px;
+}
+
+.text-training ul li h2{
+    font-size: 20px;
 }
 
 
+.text-training ul li p{
+    font-size: 17px;
+}
+
+.text-training {
+    width:100%;
+    
+}
+
+
+/*INIZIO SKILLS*/
 
 .skills .img-programm{
     width:100px;
 }
 
-.text-training {
-    width:100%;
-    margin-bottom:50px;
+.skills .title-section{
+    margin-bottom: 30px;
+    font-size:30px;
 }
 
 
-.text-training h1{
-    margin-bottom:30px;
-}
-
-.text-training p {
-    font-size: 20px;
-    text-align: justify;
-}
+/*FINE FORMAZIONE*/
 
 
 
-
-
-
-
-
-
-
+/*INIZIO FORM CONTATTI*/
 form{
-    padding: 80px;
+    padding: 60px;
     margin:auto;
     
 }
@@ -294,20 +335,30 @@ form{
 }
 
 .contatti{
-    background-color: rgb(167, 211, 211);
+    background-color: #F2E6DF;
     margin-bottom:20px;
     border-radius: 30px;
 }
 
 
 .title-contact{
-    padding: 80px 80px 0 80px;
+    padding: 60px 0 0 60px;
+    font-size: 30px;
 }
+
+.subtitle-contact{
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight:400 ;
+}
+
 
 
 
 .input-title{
     margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 
@@ -341,14 +392,17 @@ input,textarea{
 
 
 .submit input[type=Submit]{
+    background-color: rgb(31, 110, 104);
+    color: white;
     width:100%;
-    font-size: 100%;
+    font-size: 20px;
     margin-top:20px;
-    margin-bottom: 50px;
     border:none;
 
 }
+/*FINE FORM CONTATTI*/
 
+/*INIZIO FOOTER*/
 
 footer{
     background-color: rgb(31, 110, 104);
@@ -357,25 +411,35 @@ footer{
 
 footer h1{
     margin: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
 }
 
+.img-footer{
+    justify-content: right;
+}
 
 .img-footer img{
     width:30px;
     margin:20px;
+    
 }
 
+/*FINE FOOTER*/
 
 
-
+/*MEDIA QUERY TABLET*/
 @media (min-width:640px) and (max-width:1024px){
 
+    /*INIZIO MENU*/
     .header li {
         float:left;
     }
 
     .header li a{
         padding:20px 30px;
+        font-size: 20px;
     }
     
     .header .menu{
@@ -391,31 +455,33 @@ footer h1{
 
     .header .Nome{
         padding:20px 0 20px 80px;
+        font-size:40px;
     }
 
+    /*FINE MENU*/
+
+
+    /*INIZIO MAIN*/
+
     .main{
-        padding-left:100px;
-        padding-right:100px;
-    
+        padding-left:60px;
+        padding-right:60px;
     }
+
+
+    /*INIZIO PRESENTAZIONE*/
     
     .presentazione{
-        padding: 200px 0 50px 0;
-       
+        padding: 150px 0 50px 0;
     }
     
     .Photo{
-        width:60%;
+        text-align: center;
     }
     
     .Photo img{
-        width:50%;
-        border-radius:50%;
-        border: 2px;
-        display: block;
-        margin:auto;
-        margin-top: 20px;
-        margin-bottom: 20px;    
+        width:70%;
+        margin-bottom: 50px;    
     }
     
     .intro{
@@ -424,34 +490,72 @@ footer h1{
     }
     
     .intro h1{
-        font-size:50px;
+        font-size:40px;
         margin-top:20px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     
     .intro p{
         font-size:20px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         margin-right:50px;
     }
     
     .intro button{
-        background-color:rgb(31, 110, 104);
-        color:white;
         font-size:20px;
-        padding:30px;
-        border-radius:20px;
-        border:none;
+        padding:20px;
+        margin: 10px 0 10px 0;
+
     }
 
+    /*FINE PRESENTAZIONE*/
 
 
 
+    /*FINE PROGETTI*/
+    
+    
 
+    .title-section{
+        font-size: 40px;
+    
+    }
+
+    .albums{
+        height:1300px;
+    }
+    
+    .album{
+        width: calc(100% / 2 - 20px);
+        margin: 10px;
+        float: left;
+    }
+    
+    .album-image img{
+        width: 100%;
+    }
+    
+    .album-title{
+        font-size: 20px;
+        margin: 10px 0 10px 0;
+    }
+
+    
+    
+    .button-project{
+        font-size: 15px;
+        padding: 10px;
+    
+    }
+    
+    /*FINE PROGETTI*/
+
+    
+    /*INIZIO FORMAZIONE*/
+    
     .training{
         border-radius: 30px;
         justify-content:space-between;
-        padding: 80px;
         margin-bottom: 50px;
     
     }
@@ -466,71 +570,31 @@ footer h1{
         width:100px;
     }
     
-    .title-section{
-        margin-bottom:30px;
-        font-size: 40px;
-    
-    }
-    
-    
-    .project-container{
-        background-color: rgb(245, 211, 229);
-        border-radius: 30px;
-        padding: 80px;
-        margin-bottom:50px;
-    }
-    
-    .project-container .title-section{
-        font-size: 30px;
-    }
-    
-    .albums{
-        background-color: rgb(231, 231, 245);
-        height:500px;
-    }
-    
-    .album{
-        width: calc(100% / 3 - 20px);
-        margin: 10px;
-        float: left;
-    }
-    
-    .album-image img{
-        width: 100%;
-    }
-    
-    .album-title{
-        font-size: 20px;
-        margin: 10px 0 10px 0;
-    }
-    
-    .button-project{
-        background-color: rgb(31, 110, 104);
-        color: white;
-        font-size: 15px;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-    
-    
-    }
-    
-    
     
 
+    /*FINE FORMAZIONE*/
+
+
+
+    /*INIZIO FORM CONTATTI*/
 
     form{
         padding-top:50px;
         padding-bottom: 50px;
         margin:auto; 
-        width:100%;
-        
-        
+        width:100%;        
     }
 }
 
+/*FINE MEDIA QUERY TABLET*/
+
+
+
+/*INIZIO MEDIA QUERY PC*/
 
 @media(min-width:1024px){
+
+    /*INIZIO MENU*/
 
     .header li {
         float:left;
@@ -538,6 +602,7 @@ footer h1{
 
     .header li a{
         padding:20px 30px;
+        font-size: 20px;
     }
     
     .header .menu{
@@ -553,13 +618,23 @@ footer h1{
 
     .header .Nome{
         padding:20px 0 20px 200px;
+        font-size:40px;
     }
+
+    /*FINE MENU*/
+
+
+    /*INIZIO MAIN*/
 
     .main{
         padding-left:200px;
         padding-right:200px;
     
     }
+
+
+
+    /*INIZIO PRESENTAZIONE*/
     
     .presentazione{
         padding: 150px 0 50px 0;
@@ -571,9 +646,7 @@ footer h1{
     }
     
     .Photo img{
-        width:60%;
-        border-radius:50%;
-        border: 2px;
+        width:70%;
         display: block;
         margin:auto;
         margin-top: 20px;
@@ -585,77 +658,33 @@ footer h1{
     }
     
     .intro h1{
-        font-size:60px;
+        font-size:50px;
         margin-top:20px;
-        margin-bottom: 30px;
+        margin-bottom:20px;
         text-align: left;
     }
     
     .intro p{
-        font-size:15px;
-        margin-bottom: 30px;
+        font-size:20px;
+        margin-bottom: 10px;
         margin-right:50px;
     }
     
     .intro button{
-        background-color:rgb(31, 110, 104);
-        color:white;
-        font-size:15px;
+        font-size:20px;
         padding:20px;
-        border-radius:20px;
-        border:none;
         float:left;
 
     }
 
 
+    /*FINE PRESENTAZIONE*/
 
 
-
-    .training{
-        border-radius: 30px;
-        display:flex;
-        justify-content:space-between;
-        padding: 80px;
-        margin-bottom: 50px;
-    
-    }
-
-    
-    
-    .text-training p {
-        font-size: 20px;
-        margin:10px;
-    }
-    
-    
-    .skills .img-programm{
-        width:100px;
-    }
-    
-    .title-section{
-        margin-bottom:30px;
-        font-size: 40px;
-    
-    }
-    
-    
-    
-
-    .project-container{
-        background-color: rgb(245, 211, 229);
-        border-radius: 30px;
-        padding: 80px;
-        margin-bottom:50px;
-    }
-    
-    .project-container .title-section{
-        font-size: 30px;
-    }
+    /*INIZIO PROGETTI*/   
     
     .albums{
-        background-color: rgb(231, 231, 245);
-        height:300px;
+        height:400px;
     }
     
     .album{
@@ -674,18 +703,36 @@ footer h1{
     }
     
     .button-project{
-        background-color: rgb(31, 110, 104);
-        color: white;
         font-size: 15px;
         padding: 10px;
-        border: none;
-        border-radius: 5px;
     
+    }
+
+    /*FINE PROGETTI*/   
+
+
+    /*INIZIO FORMAZIONE*/       
+
+    .training{
+        display:flex;
+        justify-content:space-between;
+    }
     
+    .text-training p {
+        font-size: 20px;
+        margin:10px;
     }
     
     
+    .skills .img-programm{
+        width:100px;
+    }
 
+    /*FINE FORMAZIONE*/   
+
+
+
+    /*INIZIO FORM CONTATTI*/   
 
     form{
         padding-top:50px;
@@ -714,6 +761,9 @@ footer h1{
         width:100%;
         
     }
-    
+
+    /*FINE FORM CONTATTI*/   
     
 }
+
+ /*FINE MEDIA QUERY PC*/   
