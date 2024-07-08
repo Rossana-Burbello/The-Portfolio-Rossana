@@ -286,7 +286,7 @@ a{
 
 .text-training  ul li{
     padding-bottom: 40px;
-    color:rgb(31, 110, 104);
+    color:#1f6e68;
     list-style-type:circle;
     font-size: 30px;
     
@@ -334,7 +334,7 @@ a{
 
 /*INIZIO FORM CONTATTI*/
 form{
-    padding: 60px;
+    padding: 30px 60px 60px 60px;
     margin:auto;
     
 }
@@ -349,6 +349,11 @@ form{
     background-color: #F2E6DF;
     margin-bottom:20px;
     border-radius: 30px;
+}
+
+.contatti img{
+    width:40px;
+    margin: 10px 60px 0 60px;
 }
 
 
@@ -653,7 +658,7 @@ footer h1{
     }
     
     .Photo img{
-        width:70%;
+        width:80%;
         display: block;
         margin:auto;
         margin-top: 20px;
