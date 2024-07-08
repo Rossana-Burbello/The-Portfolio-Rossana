@@ -176,6 +176,10 @@ a{
      margin-bottom: 20px;
      text-align: left;
 }
+
+.intro p a {
+    color: black;
+}
  
 .intro button{
      background-color:rgb(31, 110, 104);
@@ -187,7 +191,10 @@ a{
      border-radius:20px;
      border:none;
      float:left; 
+}
 
+.intro button a {
+    text-decoration: none;
 }
 
 /*FINE PRESENTAZIONE*/
@@ -209,13 +216,7 @@ a{
 }
 
 
-.project-container a{
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 500;
-    color: black;
-    
-}
+
 
 .albums{
     height:calc(100% / 5 - 20px);
@@ -247,14 +248,24 @@ a{
 
 }
 
-.button-project{
+.subtitle-section {
+    color: black;
+}
+
+.button-project {
     background-color: rgb(31, 110, 104);
     color: white;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px;
     border: none;
     border-radius: 10px;
     margin:10px 0 0 0;
+}
+
+
+.button-project a {
+    text-decoration: none;
 }
 
 /*FINE PROGETTI*/
@@ -357,7 +368,7 @@ form{
 
 .input-title{
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -405,12 +416,14 @@ input,textarea{
 /*INIZIO FOOTER*/
 
 footer{
+    margin-top: 70px;
     background-color: rgb(31, 110, 104);
-    display: flex;
+    display:flex;
+    justify-content: center;
 }
 
 footer h1{
-    margin: 20px;
+    margin: 20px 100px 20px 20px;
     font-size: 20px;
     font-weight: 200;
     color: white;
@@ -540,13 +553,7 @@ footer h1{
         margin: 10px 0 10px 0;
     }
 
-    
-    
-    .button-project{
-        font-size: 15px;
-        padding: 10px;
-    
-    }
+
     
     /*FINE PROGETTI*/
 
@@ -684,7 +691,7 @@ footer h1{
     /*INIZIO PROGETTI*/   
     
     .albums{
-        height:400px;
+        height:450px;
     }
     
     .album{
@@ -702,11 +709,7 @@ footer h1{
         margin: 10px 0 10px 0;
     }
     
-    .button-project{
-        font-size: 15px;
-        padding: 10px;
-    
-    }
+   
 
     /*FINE PROGETTI*/   
 
@@ -722,6 +725,7 @@ footer h1{
         font-size: 20px;
         margin:10px;
     }
+    
     
     
     .skills .img-programm{
