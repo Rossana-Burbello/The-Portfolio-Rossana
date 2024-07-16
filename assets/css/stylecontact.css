@@ -124,6 +124,8 @@ a{
 
 /*FINE MENU*/
 
+
+
 /*INIZIO MAIN*/
 
 .main{
@@ -139,11 +141,6 @@ form{
     
 }
 
-.contatti:after{
-    clear:both;
-    display:table;
-    content:"";
-}
 
 .contatti{
     background-color: #F2E6DF;
@@ -152,15 +149,20 @@ form{
     
 }
 
+.contatti p{
+    margin-left: 60px;
+}
+
 .contatti img{
     width:40px;
-    margin: 10px 60px 0 60px;
+    margin: 10px 20px 0 20px;
 }
 
 
 .title-contact{
     padding: 60px 0 0 60px;
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 300;
 }
 
 .subtitle-contact{
@@ -170,8 +172,6 @@ form{
 }
 
 
-
-
 .input-title{
     margin-bottom: 10px;
     font-size: 20px;
@@ -179,10 +179,10 @@ form{
 }
 
 
+
 input,textarea{
     padding: 20px;
     border-radius: 20px;
-    
 }
 
 .info input[type=text], .info input[type=email]{
@@ -193,18 +193,16 @@ input,textarea{
     
 }
 
+.submit input[type=Submit]:hover{
+    background-color:rgb(15, 75, 70);
+}
+
 .message textarea{
     width: 100%;
     height: 200px;
     font-size: 100%;
     margin-bottom: 30px;
     border:none;
-
-
-}
-
-.check{
-    float:left;
 }
 
 
@@ -290,7 +288,6 @@ footer h1{
     /*INIZIO FORM CONTATTI*/
     
     
-
     form{
         padding-top:50px;
         padding-bottom: 50px;
@@ -349,7 +346,7 @@ footer h1{
     .contatti{
         margin-bottom: 20px;
     }
-    
+
 
     form{
         padding-top:50px;
@@ -362,6 +359,7 @@ footer h1{
 
     .title-contact{
         display: block;
+        
     }
 
     .info{

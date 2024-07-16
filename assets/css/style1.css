@@ -149,7 +149,6 @@ a{
  
 .Photo img{
      width:100%;
-     /*border-radius:50%;*/
      border: 2px;
      margin-top: 40px;
      margin-bottom: 40px;
@@ -165,7 +164,7 @@ a{
  
 .intro h1{
      font-size:40px;
-     font-weight: 500;
+     font-weight: 300;
      margin-top:20px;
      margin-bottom: 20px;
      text-align:left;
@@ -193,6 +192,10 @@ a{
      float:left; 
 }
 
+.intro button:hover{
+    background-color:rgb(15, 75, 70);
+}
+
 .intro button a {
     text-decoration: none;
 }
@@ -212,10 +215,8 @@ a{
 
 .project-container .title-section{
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 300;
 }
-
-
 
 
 .albums{
@@ -260,8 +261,12 @@ a{
     font-weight: 500;
     padding: 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     margin:10px 0 0 0;
+}
+
+.button-project:hover {
+    background-color:rgb(15, 75, 70);
 }
 
 
@@ -282,7 +287,8 @@ a{
 
 .text-training .title-section{
     margin-bottom: 30px;
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 40px;
 }
 
 .text-training  ul li{
@@ -300,6 +306,7 @@ a{
 
 .text-training ul li h1{
     font-size: 25px;
+    font-weight: 400;
 }
 
 .text-training ul li h2{
@@ -325,26 +332,20 @@ a{
 
 .tools .title-section{
     margin-bottom: 30px;
-    font-size:30px;
+    font-size:40px;
+    font-weight: 300;
 }
 
 .tools{
     padding: 60px 60px 60px 0;
 }
 
-
-
-
 /*FINE FORMAZIONE*/
 
 
 
 /*INIZIO FORM CONTATTI*/
-form{
-    padding: 30px 60px 60px 60px;
-    margin:auto;
-    
-}
+
 
 .contatti:after{
     clear:both;
@@ -353,6 +354,7 @@ form{
 }
 
 .contatti{
+    
     background-color: #F2E6DF;
     margin-bottom:20px;
     border-radius: 30px;
@@ -364,9 +366,10 @@ form{
 }
 
 
-.title-contact{
-    padding: 60px 0 0 60px;
-    font-size: 30px;
+.contatti .title-contact{
+    padding: 60px 60px 0 60px;
+    font-size: 40px;
+    font-weight:300 ;
 }
 
 .subtitle-contact{
@@ -375,54 +378,26 @@ form{
     font-weight:400 ;
 }
 
-
-
-
-.input-title{
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-
-input,textarea{
-    padding: 20px;
-    border-radius: 20px;
-    
-}
-
-.info input[type=text], .info input[type=email]{
-    width:100%;
-    font-size: 100%;
-    margin-bottom: 30px;
-    border:none;
-    
-}
-
-.message textarea{
-    width: 100%;
-    height: 200px;
-    font-size: 100%;
-    margin-bottom: 30px;
-    border:none;
-
-
-}
-
-.check{
-    float:left;
-}
-
-
-.submit input[type=Submit]{
+.button-page-form{
     background-color: rgb(31, 110, 104);
     color: white;
-    width:100%;
-    font-size: 20px;
-    margin-top:20px;
-    border:none;
-
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px 60px 60px 60px;
+    float: left;
 }
+
+.button-page-form:hover {
+    background-color:rgb(15, 75, 70);
+}
+
+.button-page-form a{
+    text-decoration: none;
+}
+
 /*FINE FORM CONTATTI*/
 
 /*INIZIO FOOTER*/
@@ -537,9 +512,7 @@ footer h1{
 
 
 
-    /*FINE PROGETTI*/
-    
-    
+    /*INIZIO PROGETTI*/  
 
     .title-section{
         font-size: 40px;
@@ -572,8 +545,6 @@ footer h1{
         bottom:0;
     }
 
-
-    
     /*FINE PROGETTI*/
 
     
@@ -592,25 +563,12 @@ footer h1{
     }
     
     
-    
     .tools .img-programm{
         width:100px;
     }
     
-    
-
     /*FINE FORMAZIONE*/
 
-
-
-    /*INIZIO FORM CONTATTI*/
-
-    form{
-        padding-top:50px;
-        padding-bottom: 50px;
-        margin:auto; 
-        width:100%;        
-    }
 }
 
 /*FINE MEDIA QUERY TABLET*/
@@ -659,8 +617,6 @@ footer h1{
     
     }
 
-
-
     /*INIZIO PRESENTAZIONE*/
     
     .presentazione{
@@ -704,7 +660,6 @@ footer h1{
 
     }
 
-
     /*FINE PRESENTAZIONE*/
 
 
@@ -737,8 +692,6 @@ footer h1{
         position: absolute;
         bottom:0;
     }
-    
-   
 
     /*FINE PROGETTI*/   
 
@@ -770,41 +723,7 @@ footer h1{
     }
 
     /*FINE FORMAZIONE*/   
-
-
-
-    /*INIZIO FORM CONTATTI*/   
-
-    form{
-        padding-top:50px;
-        padding-bottom: 50px;
-        margin:auto; 
-        width:100%;
-        display: flex;
-        flex-direction:row;
-    }
-
-    .title-contact{
-        display: block;
-    }
-
-    .info{
-        width:100%;
-        padding-right: 50px;
-    }
-
-    .message{
-        width:100%;
-    }
-    
-    
-    .submit input[type=Submit]{
-        width:100%;
-        
-    }
-
-    /*FINE FORM CONTATTI*/   
-    
+  
 }
 
  /*FINE MEDIA QUERY PC*/   
