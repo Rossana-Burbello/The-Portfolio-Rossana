@@ -229,6 +229,7 @@ a{
 
 .album-image img{
     width: 100%;
+    border-radius: 20px;
 }
 
 .album-title{
@@ -318,14 +319,20 @@ a{
 
 /*INIZIO SKILLS*/
 
-.skills .img-programm{
-    width:100px;
+.tools .img-programm{
+    width: 50px;
 }
 
-.skills .title-section{
+.tools .title-section{
     margin-bottom: 30px;
     font-size:30px;
 }
+
+.tools{
+    padding: 60px 60px 60px 0;
+}
+
+
 
 
 /*FINE FORMAZIONE*/
@@ -540,13 +547,15 @@ footer h1{
     }
 
     .albums{
-        height:1300px;
+        height:1400px;
     }
     
     .album{
         width: calc(100% / 2 - 20px);
-        margin: 10px;
+        height: 430px;
+        margin: 10px 10px 40px 10px;
         float: left;
+        position: relative;
     }
     
     .album-image img{
@@ -556,6 +565,11 @@ footer h1{
     .album-title{
         font-size: 20px;
         margin: 10px 0 10px 0;
+    }
+
+    .button-project{
+        position: absolute;
+        bottom:0;
     }
 
 
@@ -578,7 +592,8 @@ footer h1{
     }
     
     
-    .skills .img-programm{
+    
+    .tools .img-programm{
         width:100px;
     }
     
@@ -697,12 +712,16 @@ footer h1{
     
     .albums{
         height:450px;
+        
     }
     
     .album{
         width: calc(100% / 5 - 20px);
+        height: 400px;
         margin: 10px;
         float: left;
+        position: relative;
+        
     }
     
     .album-image img{
@@ -712,6 +731,11 @@ footer h1{
     .album-title{
         font-size: 20px;
         margin: 10px 0 10px 0;
+    }
+
+    .button-project{
+        position: absolute;
+        bottom:0;
     }
     
    
@@ -731,10 +755,18 @@ footer h1{
         margin:10px;
     }
     
+    .img-tools{
+        display: flex;
+        flex-direction:column;
+    }
     
     
-    .skills .img-programm{
-        width:100px;
+    .tools .img-programm{
+        width:80px;
+        margin-bottom: 10px;
+    }
+    .tools{
+        padding: 0 60px 60px 0;
     }
 
     /*FINE FORMAZIONE*/   
