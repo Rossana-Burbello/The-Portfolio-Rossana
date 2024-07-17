@@ -45,10 +45,11 @@ a{
 
 .header .Nome{
     float: left;
-    font-size:30px;
+    font-size:20px;
     color:white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
+
 }
 
 .header .menu{
@@ -136,7 +137,7 @@ a{
 
 /*INIZIO FORM CONTATTI*/
 form{
-    padding: 30px 60px 60px 60px;
+    padding: 40px 40px 40px 40px;
     margin:auto;
     
 }
@@ -150,7 +151,7 @@ form{
 }
 
 .contatti p{
-    margin-left: 60px;
+    padding: 20px 40px 0 40px;
 }
 
 .contatti img{
@@ -160,13 +161,13 @@ form{
 
 
 .title-contact{
-    padding: 60px 0 0 60px;
-    font-size: 40px;
-    font-weight: 300;
+    padding: 40px 40px 0 40px;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .subtitle-contact{
-    margin-left: 60px;
+    padding: 0 40px 0 40px;
     font-size: 20px;
     font-weight:400 ;
 }
@@ -227,7 +228,7 @@ footer{
 }
 
 footer h1{
-    margin: 20px 100px 20px 20px;
+    margin: 20px;
     font-size: 20px;
     font-weight: 200;
     color: white;

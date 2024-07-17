@@ -45,10 +45,11 @@ a{
 
 .header .Nome{
     float: left;
-    font-size:30px;
+    font-size:20px;
     color:white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
+
 }
 
 .header .menu{
@@ -142,7 +143,7 @@ a{
 
 
 .Photo{
-     width:50%;
+     width:70%;
      margin:auto;
      
 }
@@ -150,8 +151,8 @@ a{
 .Photo img{
      width:100%;
      border: 2px;
-     margin-top: 40px;
-     margin-bottom: 40px;
+     margin-top: 30px;
+     margin-bottom: 30px;
  
 }
  
@@ -208,14 +209,14 @@ a{
 .project-container{
     background-color: #F2E6DF;
     border-radius: 30px;
-    padding: 60px;
-    margin-bottom:50px;
+    padding: 40px;
+    margin-bottom:20px;
 }
 
 
 .project-container .title-section{
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 
@@ -287,8 +288,8 @@ a{
 
 .text-training .title-section{
     margin-bottom: 30px;
-    font-weight: 300;
-    font-size: 40px;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 .text-training  ul li{
@@ -332,12 +333,12 @@ a{
 
 .tools .title-section{
     margin-bottom: 30px;
-    font-size:40px;
-    font-weight: 300;
+    font-size:30px;
+    font-weight: 400;
 }
 
 .tools{
-    padding: 60px 60px 60px 0;
+    padding: 30px 30px 30px 0;
 }
 
 /*FINE FORMAZIONE*/
@@ -360,13 +361,13 @@ a{
 
 
 .contatti .title-contact{
-    padding: 60px 60px 0 60px;
-    font-size: 40px;
-    font-weight:300 ;
+    padding: 40px 40px 0 40px;
+    font-size: 30px;
+    font-weight:400 ;
 }
 
 .subtitle-contact{
-    margin-left: 60px;
+    padding: 0 40px 0 40px;
     font-size: 20px;
     font-weight:400 ;
 }
@@ -379,7 +380,7 @@ a{
     padding: 20px;
     border: none;
     border-radius: 20px;
-    margin: 20px 60px 60px 60px;
+    margin: 40px 40px 40px 40px;
 }
 
 .button-page-form:hover {
@@ -402,7 +403,7 @@ footer{
 }
 
 footer h1{
-    margin: 20px 100px 20px 20px;
+    margin: 20px;
     font-size: 20px;
     font-weight: 200;
     color: white;
@@ -430,8 +431,8 @@ footer h1{
     }
 
     .header li a{
-        padding:20px 30px;
-        font-size: 20px;
+        padding:20px 20px;
+        font-size: 15px;
     }
     
     .header .menu{
@@ -446,8 +447,8 @@ footer h1{
     }
 
     .header .Nome{
-        padding:20px 0 20px 80px;
-        font-size:40px;
+        padding:25px 0 20px 80px;
+        font-size:30px;
     }
 
     /*FINE MENU*/
@@ -556,7 +557,7 @@ footer h1{
     
     
     .tools .img-programm{
-        width:100px;
+        width:80px;
     }
     
     /*FINE FORMAZIONE*/
