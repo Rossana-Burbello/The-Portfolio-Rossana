@@ -347,11 +347,6 @@ a{
 /*INIZIO FORM CONTATTI*/
 
 
-.contatti:after{
-    clear:both;
-    display:table;
-    content:"";
-}
 
 .contatti{
     
@@ -387,7 +382,6 @@ a{
     border: none;
     border-radius: 20px;
     margin: 20px 60px 60px 60px;
-    float: left;
 }
 
 .button-page-form:hover {
